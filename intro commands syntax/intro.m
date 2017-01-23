@@ -213,3 +213,49 @@ dsize = size(data)
 
 % if the max function is called with 2 outputs, the 2nd is the index
 [vMax,ivMax] = max(v2)
+
+%-- Matlab help
+% use the help button in the Home tab and search
+% use doc functionName to see help about that function
+clear
+clc
+
+%-- random integer
+x = randi([1,20],7,4)
+
+%-- plotting vectors
+data = x;
+sample = data(:,1);
+density = data(:,2);
+v1 = data(:,3);
+v2 = data(:,4);
+mass1 = density.*v1;
+mass2 = density.*v2;
+
+% 2 vectors of the same length are plotted against each other using plot
+% ex plot(xaxis,yaxis)
+plot(sample,mass1)
+
+% plot can have color, line style, marker style specified
+% ex. plot(x,y,'r--o')
+plot(sample,mass2,'r*')
+
+% use hold on to plot the next graph on top of the previous
+hold on
+plot(sample,mass1,'ks')
+
+% close all open figures by using close all command
+close all
+
+% plot a vector on y against numbers 1 to vector length range by plot(v1)
+plot(v1)
+
+% further define plots by stating property names and their values
+plot(v1,'LineWidth',3)
+
+% plot(x,yarguments,'line specifier','propertyname',property value)
+plot(sample,v1,'ro-','LineWidth',4)
+
+% labels can be added to plots retroactively
+title('Sample Densities')
+ylabel('Density (g/cm^3)')
