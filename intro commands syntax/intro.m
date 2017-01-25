@@ -272,3 +272,7 @@ legend('sample')
 
 %-- absolute value
 % abs(array)
+
+%-- loglog plot
+% a loglog plot is used in the same manner as the plot function
+% to obtain log scales for both axes
