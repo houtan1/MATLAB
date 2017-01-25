@@ -237,4 +237,32 @@ mass2 = density.*v2;
 plot(sample,mass1)
 
 % plot can have color, line style, marker style specified
-% ex. plot(x,y,'r--o
+% ex. plot(x,y,'r--o')
+plot(sample,mass2,'r*')
+
+% use hold on to plot the next graph on top of the previous
+hold on
+plot(sample,mass1,'ks')
+
+% close all open figures by using close all command
+close all
+
+% plot a vector on y against numbers 1 to vector length range by plot(v1)
+plot(v1)
+
+% further define plots by stating property names and their values
+plot(v1,'LineWidth',3)
+
+% plot(x,yarguments,'line specifier','propertyname',property value)
+plot(sample,v1,'ro-','LineWidth',4)
+
+% labels can be added to plots retroactively
+title('Sample Densities')
+ylabel('Density (g/cm^3)')
+legend('sample')
+
+% plots can be made by selecting the x (and y) variables from the
+% workspace, then clicking the plots tab and choosing a plot
+
+%-- fast fourier transform
+% use fft(

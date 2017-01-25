@@ -259,3 +259,16 @@ plot(sample,v1,'ro-','LineWidth',4)
 % labels can be added to plots retroactively
 title('Sample Densities')
 ylabel('Density (g/cm^3)')
+legend('sample')
+
+% plots can be made by selecting the x (and y) variables from the
+% workspace, then clicking the plots tab and choosing a plot
+
+%-- fast fourier transform
+% use fft(array) to get its FFT
+
+%-- number of elements in an array
+% numel(array)
+
+%-- absolute value
+% abs(array)
